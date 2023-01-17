@@ -31,6 +31,12 @@ class UsingConstructor(name: String){
         //위 constructor의 (name, count) 호출
     }
 }
+//또는 그냥 간편하게 주 생성자에 var이나 val을 붙여서 멤버 변수로 만들 수 있다.
+class EasyInit(val name: String, val count: Int){
+    fun someFun(){
+        println("name: $name, count: $count")
+    }
+}
 
 fun main(){
     val user = UserWithInitAndGlobal("jonghyun", 10)
